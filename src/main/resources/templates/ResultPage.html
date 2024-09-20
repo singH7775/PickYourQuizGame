@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Pick Your Quiz</title>
+	<link rel="stylesheet" href="/Style.css">
+</head>
+
+<body>
+
+	<section class="header">
+	
+	<section class="rules">
+	
+		<div th:if="${correct}" class="show-result">
+			<img th:src="@{/images/correct.gif}" class="takingNotesGif"/>
+		</div>
+
+		
+		<div th:if="${incorrect}" class="show-result">
+			<img th:src="@{/images/incorrect.gif}" class="takingNotesGif"/>
+		</div>
+		
+		<div class="next-btn">
+			<form th:action="@{/chat/question}" method="get">
+				<input type="hidden" name="topic" th:value="${session.topic}">
+				<button type="submit" class="signing-btn">next</button>		
+			</form>
+		</div>
+		
+		<div>
+			<p class="stats">Current points : <span th:text="${currentPoints}"></span></p>
+		</div>
+	
+	</section>
+	</section>
+
+</body>
+
+</html>

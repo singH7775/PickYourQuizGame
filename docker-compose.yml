@@ -1,0 +1,31 @@
+version: '3'
+services:
+  springboot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quizgame:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_NAME=players
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=players
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:

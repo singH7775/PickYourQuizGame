@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Pick Your Quiz</title>
+	<link rel="stylesheet" href="/Style.css">
+</head>
+
+<body>
+
+	<section class="header">
+	
+		<div th:if="${success}" class="success-message">
+			<p th:text="${success}"></p>
+		</div>
+		
+		<div th:if="${error}" class="error-message">
+			<p th:text="${error}"></p>
+		</div>
+	
+		<div class="sign-in-up">
+		
+			<form th:action="@{/checkCredentials}" method="post">
+			
+				<input type="text" name="username" placeholder="Enter username" required>
+				<input type="password" name="password" placeholder="Enter password" required>
+				<button type="submit" class="signing-btn">Sign In</button>
+			
+			</form>	
+			
+			<form th:action="@{/signup}">
+				<button type="submit" class="signing-btn-2">Sign Up</button>
+			</form>
+			
+		</div>
+	
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Pick Your Quiz</title>
+	<link rel="stylesheet" href="/Style.css">
+</head>
+
+<body>
+
+	<section class="header">
+	
+	<section class="rules">
+	
+		<div class="rules-page">
+			<p>
+				<span>Question (</span>
+				<span th:text="${session.questionNumber}"></span>
+				<span>/10)</span>
+			</p>
+			<p th:utext="${question}"></p>
+		</div>
+		
+		<form th:action="@{/chat/checkanswer}" class="answer-submit" method="post">
+			<input type="text" name="answer" placeholder="answer" maxlength="1" pattern="[AaBbCc]" title="A, B, or C" required>
+			<div class="submit-button">
+				<button type="submit" class="signing-btn">submit</button>
+			</div>
+		</form>
+		
+		<div>
+			<p class="stats">Current points : <span th:text="${currentPoints}"></span></p>
+		</div>
+		
+	</section>
+	
+	</section>
+
+</body>
+
+</html>

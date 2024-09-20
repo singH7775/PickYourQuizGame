@@ -1,0 +1,170 @@
+* {
+	padding: 0;
+	font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: gray;
+}
+
+.text-box{
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #000000; 
+}
+
+.text-box h1{
+	font-size: 35px;
+}
+
+.text-box p{
+	margin: 8px 0 45px;
+	font-size: 12px;
+}
+
+.takingNotesGif{
+	position: relative;
+	width: 100px;
+	top: 40px;
+}
+
+.row{
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+}
+
+.row2{
+	margin-top: 1%;
+	display:flex;
+	justify-content: center;
+}
+
+.signing-btn, .signing-btn-2, .signing-btn-3{
+	border: 1px solid #0000FF;
+	border-radius: 40px;
+	padding: 20px 55px;
+	font-size: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	background: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	color: #0000FF;
+}
+
+.signing-btn:hover, .signing-btn-2:hover, .signing-btn-3:hover {
+	background: #0000FF;
+	color: #fff;
+	transition: 1s;
+}
+
+.signing-btn-2 {
+	margin-top: 1%;
+}
+
+.signing-btn-3 {
+	margin-top: 1%;
+	margin-left:20px;
+}
+
+.rules-page{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 15%;
+}
+
+.sign-in-up{
+	position: absolute;
+  	width: 300px;
+  	height: 200px;
+  	z-index: 15;
+  	top: 50%;
+  	left: 50%;
+  	margin: -100px 0 0 -150px;
+}
+
+.sign-in-up input{
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.error-too-short {
+	color: red;
+	font-size: 10px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.error-message, .success-message {
+    text-align: center;
+    transform: translate(-4%, 500%);
+}
+
+.error-message {
+	color: red;
+	margin-left: 3%;
+}
+
+.success-message {
+	color: DarkGreen;
+}
+
+.topic-button {
+	font-size: 10px;
+	text-align: center;
+	margin-top: 15%;
+}
+
+.log-out {
+	float: right;
+	margin-top: 1%;
+	margin-right: 10px;
+	color: black;
+}
+
+div {
+	clear: both;
+}
+
+.answer-submit {
+	text-align: center;
+}
+
+.submit-button {
+	margin-top: 2%;
+}
+
+.show-result {
+	text-align: center;
+}
+
+.next-btn {
+	text-align: center;
+	margin-top: 4%;
+}
+
+.stats {
+	text-align: center;
+}
+
+.stat-color1 {
+	color: green;	
+}
+
+.stat-color2 {
+	color: red;
+}
+
+.result-gif {
+	width: 10%;
+	height: 10%;
+}
