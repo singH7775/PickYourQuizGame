@@ -1,4 +1,4 @@
-# 🧠 PickYourQuizGame
+# 🧠 QuizCraft
 
 ## 🌟 Overview
 PickYourQuizGame is an innovative, full-stack web application that offers an engaging and challenging quiz experience. Built with Spring Boot and powered by OpenAI's API, this project demonstrates a robust combination of modern web technologies, database management, and AI integration.
