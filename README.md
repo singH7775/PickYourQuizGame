@@ -1,7 +1,7 @@
 # 🧠 QuizCraft
 
 ## 🌟 Overview
-PickYourQuizGame is an innovative, full-stack web application that offers an engaging and challenging quiz experience. Built with Spring Boot and powered by OpenAI's API, this project demonstrates a robust combination of modern web technologies, database management, and AI integration.
+QuizCraft is an innovative, full-stack web application that offers an engaging and challenging quiz experience. Built with Spring Boot and powered by OpenAI's API, this project demonstrates a robust combination of modern web technologies, database management, and AI integration.
 
 ## 🚀 Key Features
 - **Dynamic Quiz Generation**: Utilizes OpenAI's API to create unique and challenging questions across various subjects.
@@ -41,11 +41,11 @@ The application follows a modern, scalable architecture:
 ### Setup and Running
 1. Clone the repository:
    ```
-   git clone https://github.com/singH7775/PickYourQuizGame.git
+   git clone https://github.com/singH7775/QuizCraft.git
    ```
 2. Navigate to the project directory:
    ```
-   cd PickYourQuizGame
+   cd QuizCraft
    ```
 3. Set up your environment variables:
    - Create a `.env` file in the root directory
